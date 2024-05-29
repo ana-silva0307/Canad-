@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+	<meta name="keywords" content="Canadá, turismo, curiosidades, país, contato, intercambio">
+	<meta name="description" content="Tudo o que você precisa saber sobre o Canadá">
+	<meta name="author" content="Ana Clara Fernandes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="img/jpg" href="img/logo2.png">
+    <title>Canadá</title>
+    <link href="css/contato.css" rel="stylesheet"/>
+	<script language="javascript" type="text/javascript">
+
+
+		function validar(){
+		var nome = form1.nome.value;
+		var email = form1.email.value;
+		var telefone = form1.telefone.value;
+		var enviado = form1.enviado,value;
+		
+		
+		if(nome == ""){
+			alert("preencha o campo nome!");
+				form1.nome.focus();
+		return false;
+		}
+	
+		if(email == ""){
+			alert("Preencha o campo com seu email!");
+				form1.email.focus();
+		return false;
+		}
+
+		if(telefone == ""){
+			alert("Preencha o campo com seu telefone!");
+				form1.telefone.focus();
+		return false;
+		}
+
+		if(enviado == ""){
+			alert("FORMULÁRIO ENVIADO COM SUCESSO!!!");
+				form1.enviado.focus();
+		return false;
+		}
+	}
+	</script>
+</head>
+<body>
+
+	<header>
+        <div class="interface">
+            <div class="logo">
+                <a href="inicio.html">
+                    <img src="img/logovazada.png" alt="logo canada" width="70px" height="70px">
+                </a>
+            </div><!--logo-->
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></td>
+                    <li><a href="sobre.html">Sobre</a></td>
+                    <li><a href="historia.html">História</a></td>
+                    <li><a href="geografia.html">Geografia</a></td>
+                    <li><a href="turismo.html">Turismo</a></td>
+                </ul>
+
+            </nav>
+            <div class="btn-contato">
+                <a href="contato.html">
+                    <button>Contato</button>
+                </a>
+            </div>
+        </div><!--interface-->
+    </header>
+
+	<form name="form1" action="" method="get">
+    <div class="main-login">
+   		<div class="left-login">
+			<h1>Alguma dúvida?<br>Entre em contato conosco:</h1>
+			<img src="img/gifcontatocss.svg"  class="left-login-image" alt="animação canadense">
+		</div><!--left-login-->
+   		<div class="right-login">
+			<div class="card-login">
+
+				<h1>CONTATO</h1>
+
+				<div class="textfield">
+					<label for="nome">Nome:</label>
+					<input class="nome" type="text" name="nome" placeholder="Nome completo">
+
+				</div><!--textfield1-->
+				<div class="textfield">
+					<label for="Email">Email:</label>
+					<input class="email" type="text" name="email" placeholder="Seu melhor email">
+
+				</div><!--textfield2-->
+				<div class="textfield">
+					<label for="telefone">Telefone/Celular:</label>
+					<input class="telefone" type="text" name="telefone" placeholder="Seu melhor Telefone">
+					<br><br><br>
+					<div class="textarea">
+					Comentários:
+					<br><br>
+					<textarea name="texto" id="text"></textarea>
+				    </div>
+
+				</div><!--textfield3-->
+				<input class="btn-enviar" type="submit" onclick="return validar()">
+				<input class="btn-limpar" type="reset" value="limpar">
+
+			
+				<!-- <button class="btn-enviar" onclick="return validar()">Enviar</button>
+				<button class="btn-limpar" onclick="reset">Limpar</button> -->
+				
+			</div><!--card-login-->
+		</div><!--right-login-->
+	</div><!--main-login-->
+	</form>
+
+<footer>
+    <div class="footer-content">
+        <ul class="footer-list">
+            <li>
+                <h3>Links</h3>
+            </li>
+            <li>
+                <a href="index.html" class="footer-link">Home</a>
+            </li>
+            <li>
+                <a href="sobre.html" class="footer-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">História</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Geográfia</a>
+            </li> 
+            <li>
+                <a href="#" class="footer-link">Turismo</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Galeria</a>
+            </li>
+        </ul>
+        <ul class="footer-list-social">
+            <li>
+                <h3>Redes Sociais</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Instagram</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Twitter</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Tiktok</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">facebook</a>
+            </li>
+        </ul>
+        <div align ="right"> <a href="#"><img src="img/seta.png" width="2%"></a></div>
+        </div>
+    </div><!--content-->
+    <div class="rodape">
+    <center>
+    <h1>&copy</h1>
+            <h5>Ana Clara Fernandes 2024 -<br> &copyTodos os direitos reservados - Trabalho acadêmico sem fins lucrativos</h5>
+    <div align ="right"> <a href="#"><img src="img/seta.png" width="2%"></a></div>
+    </div>
+</footer>
+    </center>
+	
+</body>
+</html>

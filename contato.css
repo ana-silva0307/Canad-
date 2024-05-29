@@ -1,0 +1,365 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    background: #faebd7ab;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin:0 auto;
+    padding:0 2%;
+}
+
+/* menu */
+
+header{
+    padding: 40px 4%;
+    
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s;
+
+}
+
+header a{
+    color: rgb(87, 83, 83);
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s
+}
+
+header a:hover{
+    color: #8b0000;
+    transform: scale(1.08);
+}
+
+
+header nav ul li{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 200;
+    background-color: #8b0000;
+    border: 0;
+    border-radius: 30px;
+    color: #faebd7;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #a12b2b;
+}
+
+section.sobre{
+    height: calc(100% - 200px);
+    position: relative;
+    transition: 0.4s;
+}
+
+section .btn-saibamais button{
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight:100;
+    background-color: #0f0707;
+    border: 0;
+    border-radius: 30px;
+    color: #faebd7;
+    cursor: pointer;
+    margin-top: 49vh;
+    margin-left: -83vh;
+}
+
+section .btn-saibamais button:hover{
+    box-shadow: 0px 0px 8px #8b0000;
+    transition: 0.4s;
+    transform: scale(1.08);
+}
+
+
+.extras{
+    position: absolute;
+    bottom: -500;
+    right: -500;
+    width: 1000px;
+    height: 900px;
+    border-radius: 50%;
+    background-color: #8b0000;
+    margin-left: 800px;
+}
+
+.texto_sobre{
+    margin-top: 20px;
+    font-size: 37px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 40px;
+}
+
+.img{
+    width: 50%;
+    padding: 36px;
+    margin-top: 0%;
+    margin-left: 10%;
+}
+
+/* contato */
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background:  #8b0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.left-login > h1{
+    font-size: 3vw;
+    color: #faebd7;
+}
+
+.left-login-image{
+    width: 30vw;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #a20202;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1{
+    color: #faebd7;
+    font-weight: 800;
+    margin: 0;
+
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #bb0b0b;
+    color:bisque;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color:#faebd7;
+    margin-bottom: 10px;
+
+}
+
+.textfield >input::placeholder{
+    color: #faebd7ab;
+}
+
+.btn-enviar{
+    width: 50%;
+    padding: 14px 0;
+    margin:25px ;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #bb0b0b;
+    background:#faebd7;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px hsl(0, 0%, 0%);
+    margin-right: 60%;
+}
+
+.btn-limpar{
+    width: 50%;
+    padding: 14px 0;
+    margin:0px ;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #bb0b0b;
+    background:#faebd7;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px hsl(0, 0%, 0%);
+    margin-left: 55%;
+    margin-top: -69px;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login>h1{
+        display: none;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login-image{
+        width: 50vw;
+    }
+    .card-login{
+        width: 90%;
+    }
+}
+
+/* footer */
+
+:root{
+    --color-neutral-0:#faebd7;
+    --color-neutral-10:#8b0000;
+    --color-neutral-30:#bb0b0b;
+    --color-neutral-40:#e9d4b88a;
+}
+
+
+.footer{
+    width: 100%;
+    color:#faebd7;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: var(--color-neutral-40);
+    transition: 0.4s;
+}
+
+.footer-content{
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+.footer-contacts h1{
+    margin-bottom: 0.75rem;
+    color: var(--color-neutral-0);
+}
+
+.footer-contacts h5{
+    margin-bottom: 0.75rem;
+    color: var(--color-neutral-40);
+}
+
+.footer-list{
+    color: var(--color-neutral-0);
+    display: flex;
+    flex-direction: column;
+    gap: 0,75rem;
+    list-style: none;
+    transition: 0.4s;
+}
+
+.footer-list-social{
+    color: var(--color-neutral-0);
+    display: flex;
+    flex-direction: column;
+    gap: 0,75rem;
+    list-style: none;
+    transition: 0.4s;
+    margin-right: 200px;
+}
+
+.footer-list > footer-link{
+    color:var(--color-neutral-40);
+    transition: all 0.4s;
+}
+.footer-list > footer-link:hover{
+    color: #641313;
+
+
+}
+
+ textarea {
+    resize: none;
+    width: 400px;
+    height: 100px;
+    border-radius: 1rem;
+    background-color: #e9d4b88a;
+    color: #faebd7;
+}
+
+.rodape{
+    background-color: #8b0000;
+    color: #faebd7;
+}
+
+
+
+
+
+

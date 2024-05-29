@@ -1,0 +1,271 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #dfd6cabb;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin:0 auto;
+    padding:0 2%;
+}
+
+
+/* estilo menu */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s;
+
+}
+
+header a{
+    color: rgb(87, 83, 83);
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s
+}
+
+header a:hover{
+    color: #8b0000;
+    transform: scale(1.08);
+}
+
+
+header nav ul li{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 200;
+    background-color: #8b0000;
+    border: 0;
+    border-radius: 30px;
+    color: #faebd7;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #a12b2b;
+}
+
+section.sobre{
+    height: calc(100% - 200px);
+    position: relative;
+    transition: 0.4s;
+}
+
+section .btn-saibamais button{
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight:100;
+    background-color: #0f0707;
+    border: 0;
+    border-radius: 30px;
+    color: #faebd7;
+    cursor: pointer;
+    margin-top: 49vh;
+    margin-left: -83vh;
+}
+
+section .btn-saibamais button:hover{
+    box-shadow: 0px 0px 8px #8b0000;
+    transition: 0.4s;
+    transform: scale(1.08);
+}
+
+.titulo{
+    text-align: center;
+    color: #8b0000;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.lugares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lugar {
+    width: calc(33.33% - 10px);
+    margin-bottom: 50px;
+    background-color: #8b0000;
+    box-shadow: 0 4px 8px rgba(142, 10, 10, 0.785);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    color: #faebd7;
+}
+
+.lugar:hover {
+    transform: translateY(-5px);
+}
+
+.lugar img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.lugar h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.lugar p {
+    padding: 0 20px;
+    text-align: justify;
+}
+
+
+/* footer */
+
+:root{
+    --color-neutral-0:#faebd7;
+    --color-neutral-10:#8b0000;
+    --color-neutral-30:#bb0b0b;
+    --color-neutral-40:#e9d4b88a;
+}
+
+
+.footer{
+    width: 100%;
+    color:#faebd7;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: var(--color-neutral-40);
+    transition: 0.4s;
+}
+
+.footer-content{
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+.footer-contacts h1{
+    margin-bottom: 0.75rem;
+    color: var(--color-neutral-0);
+}
+
+.footer-contacts h5{
+    margin-bottom: 0.75rem;
+    color: var(--color-neutral-40);
+}
+
+.footer-list{
+    color: var(--color-neutral-0);
+    display: flex;
+    flex-direction: column;
+    gap: 0,75rem;
+    list-style: none;
+    transition: 0.4s;
+}
+
+.footer-list-social{
+    color: var(--color-neutral-0);
+    display: flex;
+    flex-direction: column;
+    gap: 0,75rem;
+    list-style: none;
+    transition: 0.4s;
+    margin-right: 200px;
+}
+
+.footer-list > footer-link{
+    color:var(--color-neutral-40);
+    transition: all 0.4s;
+}
+.footer-list > footer-link:hover{
+    color: #641313;
+
+
+}
+
+.rodape{
+    background-color: #8b0000;
+    color: #faebd7;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recipe {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    background-color: #8b0000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    color: #faebd7;
+}
+
+.recipe:hover {
+    transform: translateY(-5px);
+}
+
+.recipe img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.recipe h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.recipe p {
+    padding: 0 20px;
+    text-align: justify;
+}
